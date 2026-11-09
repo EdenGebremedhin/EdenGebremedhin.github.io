@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eden Habtetsion Gebremedhin | AI Engineer</title>
+<meta name="description" content="AI engineer building computer vision and edge AI. Addis Ababa.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1b0a33;--plum:#2c1458;--orchid:#ff4fb8;--lilac:#d8bcff;--pearl:#fff3fb;
+--display:'Unbounded','Trebuchet MS',system-ui,sans-serif;--body:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--pearl);font:400 1.05rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orchid);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 1.4rem}
+nav{position:sticky;top:0;z-index:5;background:rgba(27,10,51,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--plum)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:.9rem;padding-bottom:.9rem;gap:1rem;flex-wrap:wrap}
+nav b{font:800 1rem var(--display);color:var(--orchid)}
+nav div{display:flex;gap:1.3rem;font-weight:500}
+nav a{text-decoration:none;color:var(--lilac)}
+nav a:hover{color:var(--pearl)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--plum)}
+#field{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;padding-top:5rem;padding-bottom:5.5rem;pointer-events:none}
+.hero a{pointer-events:auto}
+.name{font:800 clamp(2.6rem,10vw,7rem)/.95 var(--display);letter-spacing:-.04em}
+.name span{display:block;color:var(--orchid)}
+.lede{max-width:36rem;font-size:1.25rem;color:var(--lilac);margin-top:1.6rem}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--orchid)}
+.btn.fill{background:var(--orchid);color:var(--ink)}
+.btn.fill:hover{background:var(--pearl);border-color:var(--pearl)}
+.btn.line:hover{background:var(--plum)}
+.hint{margin-top:1.4rem;font-size:.9rem;color:var(--lilac);opacity:.7}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--plum);border-bottom:1px solid var(--plum)}
+.facts div{background:var(--ink);padding:1.6rem 1.4rem}
+.facts b{display:block;font:800 clamp(1.6rem,4vw,2.6rem) var(--display);color:var(--orchid);letter-spacing:-.03em}
+.facts span{color:var(--lilac);font-size:.95rem}
+@media(max-width:700px){.facts{grid-template-columns:1fr 1fr}}
+
+h2{font:800 clamp(1.7rem,4.4vw,2.6rem)/1.1 var(--display);letter-spacing:-.03em;margin-bottom:2rem}
+section{padding:4rem 0}
+
+/* projects */
+.proj{border:2px solid var(--plum);border-radius:16px;margin-bottom:1rem;padding:0 1.4rem;overflow:hidden}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:.4rem 1rem;padding:1.4rem 0;flex-wrap:wrap}
+summary::-webkit-details-marker{display:none}
+summary strong{font:800 clamp(1.25rem,3.4vw,2rem) var(--display);letter-spacing:-.02em}
+summary em{font-style:normal;color:var(--lilac);font-size:.95rem}
+summary:hover strong,.proj[open] summary strong{color:var(--orchid)}
+.proj[open]{background:var(--plum);padding-bottom:1.6rem}
+.proj[open] summary{padding-bottom:.8rem}
+.body{max-width:48rem}
+.body p{margin-bottom:.8rem}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0 1.1rem}
+.chips span{background:var(--ink);color:var(--lilac);border:1.5px solid var(--lilac);border-radius:999px;padding:.15rem .8rem;font-size:.88rem}
+.body a{color:var(--orchid);font-weight:700}
+.pipe{width:100%;max-width:640px;height:auto;margin:.6rem 0 1.2rem;display:block}
+.pipe rect{fill:var(--ink);stroke:var(--orchid);stroke-width:2}
+.pipe .l{stroke:var(--lilac);stroke-dasharray:6 6;stroke-width:2;fill:none;animation:flow 1.2s linear infinite}
+.pipe text{fill:var(--pearl);font:600 13px var(--body);text-anchor:middle}
+.pipe .s{fill:var(--lilac);font-weight:400;font-size:11px}
+@keyframes flow{to{stroke-dashoffset:-12}}
+
+/* timeline */
+.tl{list-style:none;padding:0;border-left:3px solid var(--orchid);margin-left:.4rem}
+.tl li{position:relative;padding:0 0 1.8rem 1.6rem}
+.tl li::before{content:"";position:absolute;left:-10px;top:.45rem;width:17px;height:17px;border-radius:50%;background:var(--ink);border:3px solid var(--orchid)}
+.tl li:last-child::before{background:var(--orchid)}
+.tl b{font:700 1.15rem var(--body)}
+.tl span{display:block;color:var(--lilac);font-size:.92rem}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:760px){.two{grid-template-columns:1fr;gap:2rem}}
+.two p{margin-bottom:1rem;max-width:34rem}
+.skills{display:grid;gap:1.1rem}
+.skills h3{font:700 1rem var(--body);color:var(--orchid);margin-bottom:.4rem}
+.tags{display:flex;gap:.45rem;flex-wrap:wrap}
+.tags span{background:var(--plum);border-radius:999px;padding:.2rem .85rem;font-size:.9rem}
+
+.contact{background:var(--orchid);color:var(--ink);border-radius:28px;padding:clamp(1.8rem,5vw,3.8rem);margin-bottom:3rem}
+.contact h2{margin-bottom:1rem}
+.contact a.m{font:800 clamp(1.05rem,3.4vw,1.8rem) var(--display);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;word-break:break-all}
+.contact p{margin-top:1.2rem;font-weight:500}
+.contact .links{display:flex;gap:1.2rem;margin-top:1.2rem;font-weight:700}
+footer{padding:0 0 2.5rem;color:var(--lilac);font-size:.9rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pipe .l{animation:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Eden G.</b><div><a href="#work">Work</a><a href="#path">Path</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1 class="name">Eden<span>Habtetsion</span></h1>
+    <p class="lede">AI engineer building computer vision and edge AI that runs on small, local hardware, where big servers and fast internet aren’t a given.</p>
+    <div class="cta">
+      <a class="btn fill" href="#work">See my projects</a>
+      <a class="btn line" href="https://github.com/EdenGebremedhin">GitHub</a>
+    </div>
+    <p class="hint">Move your cursor or finger. My detector will find you.</p>
+  </div>
+</header>
+
+<div class="facts">
+  <div><b>132→20</b><span>papers screened, then included in my literature review</span></div>
+  <div><b>3+</b><span>years of full-stack development</span></div>
+  <div><b>4</b><span>AI projects shipped</span></div>
+  <div><b>3</b><span>languages: Tigrigna, Amharic, English</span></div>
+</div>
+
+<div class="wrap">
+<section id="work">
+  <h2>Projects</h2>
+  <details class="proj" open>
+    <summary><strong>DeepShield-Edge</strong><em>Deepfake detection on edge devices</em></summary>
+    <div class="body">
+      <p>Most deepfake detectors are too heavy for phones and small devices. DeepShield-Edge splits the job in two: find the face first, then decide if it’s real or fake. Then I shrank it for edge hardware.</p>
+      <svg class="pipe" viewBox="0 0 640 110" role="img" aria-label="Pipeline: image, face localization, real or fake classifier, INT8 model on an edge device">
+        <rect x="4" y="25" width="120" height="60" rx="10"/><text x="64" y="60">Image</text>
+        <rect x="176" y="25" width="140" height="60" rx="10"/><text x="246" y="52">Stage 1</text><text class="s" x="246" y="70">Face localization</text>
+        <rect x="368" y="25" width="140" height="60" rx="10"/><text x="438" y="52">Stage 2</text><text class="s" x="438" y="70">Real or fake</text>
+        <rect x="548" y="25" width="88" height="60" rx="10"/><text x="592" y="52">Edge</text><text class="s" x="592" y="70">INT8 · ONNX</text>
+        <path class="l" d="M124 55H176M316 55H368M508 55H548"/>
+      </svg>
+      <p>The design came from my own systematic literature review, done before I built anything.</p>
+      <div class="chips"><span>Computer vision</span><span>ONNX Runtime</span><span>INT8 quantization</span><span>Python</span></div>
+      <!-- ADD: your real accuracy, model size and latency numbers here -->
+      <a href="https://github.com/EdenGebremedhin">View the code</a>
+    </div>
+  </details>
+  <details class="proj">
+    <summary><strong>AgriMargin</strong><em>A team of AI agents for farmers</em></summary>
+    <div class="body">
+      <p>A multi-agent LLM system that supports farm decisions: crop diagnosis, weather risk, market prices, the economics, and a final action plan. Built during the BioSustainability Design Programme.</p>
+      <div class="chips"><span>LLM agents</span><span>Multi-agent systems</span><span>Decision support</span></div>
+      <a href="https://github.com/EdenGebremedhin">View the code</a>
+    </div>
+  </details>
+  <details class="proj">
+    <summary><strong>Visual Product Search</strong><em>Find products by photo</em></summary>
+    <div class="body">
+      <p>Image-embedding similarity search for eCommerce: upload a photo, get matching products. Started at the AA Hackathon, eCommerce Innovation track.</p>
+      <div class="chips"><span>Embeddings</span><span>Similarity search</span><span>eCommerce</span></div>
+      <a href="https://github.com/EdenGebremedhin">View the code</a>
+    </div>
+  </details>
+  <details class="proj">
+    <summary><strong>Driver drowsiness detection</strong><em>Real-time, with hardware</em></summary>
+    <div class="body">
+      <p>Real-time detection of a drowsy driver using OpenCV, connected to hardware that responds in the moment.</p>
+      <div class="chips"><span>OpenCV</span><span>Real-time</span><span>Hardware integration</span></div>
+      <a href="https://github.com/EdenGebremedhin">View the code</a>
+    </div>
+  </details>
+</section>
+
+<section id="path">
+  <h2>My path</h2>
+  <ul class="tl">
+    <li><b>BSc, Electrical and Computer Engineering</b><span>AASTU · 2018 to 2022</span></li>
+    <li><b>IT support</b><span>Camara Education Ethiopia · Oct 2021 to Feb 2022</span></li>
+    <li><b>Junior software developer</b><span>Alephtav Consultancy and Trading PLC · May to Dec 2023</span></li>
+    <li><b>Freelance software developer</b><span>Web apps for clients · since Jan 2024</span></li>
+    <li><b>MSc, Artificial Intelligence</b><span>AASTU · since 2025, thesis year ahead</span></li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="two">
+    <div>
+      <p>I’m an engineer in Addis Ababa. I wrote a systematic review on vision models and edge AI before building DeepShield-Edge, because I like to understand a problem before I solve it.</p>
+      <p>My research interests are explainable AI, medical imaging and lightweight models for low-resource settings.</p>
+    </div>
+    <div class="skills">
+      <div><h3>AI</h3><div class="tags"><span>Deep learning</span><span>Computer vision</span><span>YOLO</span><span>OpenCV</span><span>RAG</span><span>AI agents</span><span>Edge AI</span></div></div>
+      <div><h3>Web</h3><div class="tags"><span>React</span><span>Node/Express</span><span>Laravel</span><span>MongoDB</span><span>SQLite</span></div></div>
+      <div><h3>Languages</h3><div class="tags"><span>Python</span><span>JavaScript</span><span>Java</span><span>PHP</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:1rem">
+  <div class="contact">
+    <h2>Let’s build something.</h2>
+    <a class="m" href="mailto:edgebremedhin@gmail.com">edgebremedhin@gmail.com</a>
+    <p>Open to AI engineering roles, research collaborations and freelance projects.</p>
+    <div class="links"><a href="https://github.com/EdenGebremedhin">GitHub</a></div>
+  </div>
+</section>
+<footer>© 2026 Eden Habtetsion Gebremedhin</footer>
+</div>
+
+<script>
+(function(){
+  var c=document.getElementById('field'),x=c.getContext('2d'),W,H,dpr=Math.min(devicePixelRatio||1,2);
+  var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var m={x:0,y:0,on:false},b={x:0,y:0,w:150,h:150},t=0;
+  function size(){var r=c.getBoundingClientRect();W=r.width;H=r.height;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);b.x=W*.72;b.y=H*.45;m.x=b.x;m.y=b.y}
+  function draw(){
+    x.clearRect(0,0,W,H);
+    x.fillStyle='rgba(216,188,255,.22)';
+    for(var i=28;i<W;i+=36)for(var j=28;j<H;j+=36){x.beginPath();x.arc(i,j,1.4,0,6.3);x.fill()}
+    if(!still){t+=.012;if(!m.on){m.x=W*.72+Math.cos(t)*W*.1;m.y=H*.45+Math.sin(t*1.3)*H*.18}
+      b.x+=(m.x-b.x)*.1;b.y+=(m.y-b.y)*.1}
+    var conf=(.9+.09*Math.abs(Math.sin(t*2))).toFixed(2),bx=b.x-b.w/2,by=b.y-b.h/2;
+    x.strokeStyle='#ff4fb8';x.lineWidth=3;x.strokeRect(bx,by,b.w,b.h);
+    var L=22;x.lineWidth=6;x.beginPath();
+    [[bx,by,1,1],[bx+b.w,by,-1,1],[bx,by+b.h,1,-1],[bx+b.w,by+b.h,-1,-1]].forEach(function(p){x.moveTo(p[0]+p[2]*L,p[1]);x.lineTo(p[0],p[1]);x.lineTo(p[0],p[1]+p[3]*L)});x.stroke();
+    var lab='visitor '+conf;x.font='700 13px Figtree, sans-serif';var w=x.measureText(lab).width+16;
+    x.fillStyle='#ff4fb8';x.fillRect(bx-1.5,by-24,w,24);x.fillStyle='#1b0a33';x.fillText(lab,bx+6,by-7);
+    if(!still)requestAnimationFrame(draw)
+  }
+  function pt(e){var r=c.getBoundingClientRect(),p=e.touches?e.touches[0]:e;m.x=p.clientX-r.left;m.y=p.clientY-r.top;m.on=true}
+  var h=c.parentNode;
+  h.addEventListener('pointermove',pt);h.addEventListener('touchmove',pt,{passive:true});
+  h.addEventListener('pointerleave',function(){m.on=false});
+  addEventListener('resize',function(){size();if(still)draw()});
+  size();draw();
+})();
+</script>
+</body>
+</html>
